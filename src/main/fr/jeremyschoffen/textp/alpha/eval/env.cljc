@@ -1,7 +1,7 @@
-(ns textp.eval.alpha.env
+(ns fr.jeremyschoffen.textp.alpha.eval.env
   (:require
     [clojure.spec.alpha :as s]
-    [textp.eval.alpha.utils :as u]))
+    [fr.jeremyschoffen.textp.alpha.eval.utils :as u]))
 
 
 (def ^:dynamic *eval*

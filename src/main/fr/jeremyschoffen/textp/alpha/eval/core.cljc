@@ -1,8 +1,8 @@
-(ns textp.eval.alpha.core
+(ns fr.jeremyschoffen.textp.alpha.eval.core
   (:require
     [net.cgrand.macrovich :as macro :include-macros true]
     [sieppari.core :as sieppari]
-    [textp.eval.alpha.env :as env]
+    [fr.jeremyschoffen.textp.alpha.eval.env :as env]
     [clojure.tools.namespace.reload :as t-ns]))
 
 (set! *warn-on-reflection* true)

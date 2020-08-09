@@ -1,4 +1,4 @@
-{:paths ["src"]
+{:paths ["src/main"]
  :deps {org.clojure/tools.namespace {:mvn/version "1.0.0"}
         metosin/sieppari            {:mvn/version "0.0.0-alpha8"}
         net.cgrand/macrovich        {:mvn/version "0.2.1"}}

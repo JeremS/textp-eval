@@ -1,4 +1,4 @@
-(ns textp.eval.alpha.utils)
+(ns fr.jeremyschoffen.textp.alpha.eval.utils)
 
 (defn make-error-fn
   ([msg]

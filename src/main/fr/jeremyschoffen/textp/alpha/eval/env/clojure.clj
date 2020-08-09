@@ -1,7 +1,7 @@
-(ns textp.eval.alpha.env.clojure
+(ns fr.jeremyschoffen.textp.alpha.eval.env.clojure
   (:require
     [clojure.tools.namespace.reload :as t-ns]
-    [textp.eval.alpha.env :as env]))
+    [fr.jeremyschoffen.textp.alpha.eval.env :as env]))
 
 
 (def default
