@@ -1,8 +1,8 @@
 (ns fr.jeremyschoffen.textp.alpha.eval.core-test
-  (:require [clojure.test :refer [deftest is]]
-            [clojure.set :as c-set]
-            [fr.jeremyschoffen.textp.alpha.eval.core :as eval-core]
-            [fr.jeremyschoffen.textp.alpha.eval.env.clojure :as clj-env]))
+  (:require
+    [clojure.test :refer [deftest is]]
+    [fr.jeremyschoffen.textp.alpha.eval.core :as eval-core]
+    [fr.jeremyschoffen.textp.alpha.eval.env.clojure :as clj-env]))
 
 
 (deftest evil

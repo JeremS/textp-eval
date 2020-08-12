@@ -1,0 +1,13 @@
+◊(require '[fr.jeremyschoffen.textp.alpha.doc.tags :as doc-tags])◊
+
+# Textp-doc
+This library provides some helper one may use to eval textp documents.
+
+## Installation
+◊doc-tags/project-coords
+
+## License
+
+Copyright ◊doc-tags/copyright-char 2020 Jeremy Schoffen
+
+Distributed under the Eclipse Public License 2.0.
