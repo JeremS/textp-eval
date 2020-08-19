@@ -1,7 +1,8 @@
 {:paths ["src/main"]
  :deps {org.clojure/tools.namespace {:mvn/version "1.0.0"}
         metosin/sieppari            {:mvn/version "0.0.0-alpha8"}
-        net.cgrand/macrovich        {:mvn/version "0.2.1"}}
+        net.cgrand/macrovich        {:mvn/version "0.2.1"}
+        exoscale/ex {:mvn/version "0.3.13"}}
 
  :aliases {:clj {:extra-deps {org.clojure/clojure {:mvn/version "1.10.1"}}}
 

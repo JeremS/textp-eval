@@ -1,6 +1,7 @@
 (ns fr.jeremyschoffen.textp.alpha.eval.core
   (:require
     [net.cgrand.macrovich :as macro :include-macros true]
+    [exoscale.ex :as ex :include-macros true]
     [sieppari.core :as sieppari]
     [fr.jeremyschoffen.textp.alpha.eval.env :as env]
     [clojure.tools.namespace.reload :as t-ns]))
@@ -18,6 +19,18 @@
                env/*write-file* (::env/write-file-fn ~eval-env)]
        ~@body)))
 
+(ex/derive ::eval-error ::ex/incorrect)
+
+(defn- eval-form
+  "Eval one for, wraps exceptions."
+  [form]
+  (ex/try+
+    (env/*eval* form)
+    (catch Exception e
+      (throw (ex/ex-info "Error during evaluation."
+                         ::eval-error
+                         {:form form}
+                         e)))))
 
 (defn eval-forms
   "Eval several forms in sequence, returns the results of the evaluation in a vector. Needs to be called within an
@@ -26,7 +39,7 @@
   See [[textp.eval.alpha.core/binding-env]]"
   [forms]
   (persistent!
-    (reduce (fn [acc f] (conj! acc (env/*eval* f)))
+    (reduce (fn [acc f] (conj! acc (eval-form f)))
             (transient [])
             forms)))
 
