@@ -12,8 +12,9 @@
 
 
 (def specific-conf (sorted-map
+                     :project/name "textp-eval"
                      :project/author "Jeremy Schoffen"
-                     :maven/group-id 'fr.jeremyschoffen.textp
+                     :maven/group-id 'fr.jeremyschoffen
                      :versioning/major :alpha
                      :versioning/scheme mbt-defaults/git-distance-scheme
 
