@@ -38,9 +38,7 @@
 
 
 (comment
-  (-> conf
-      (u/assoc-computed :project/version (comp str mbt-defaults/anticipated-next-version))
-      make-docs!)
+  (str (mbt-defaults/anticipated-next-version conf))
 
   (new-milestone! conf)
 
