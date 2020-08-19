@@ -1,7 +1,7 @@
 
 
 # Textp-doc
-This library provides some helper one may use to eval textp documents.
+This library provides some helper one may use to eval textp documents. Can only eval from clojure for now.
 
 ## Installation
 Deps coords:
