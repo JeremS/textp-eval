@@ -28,6 +28,8 @@
              ::versioning/major :alpha
              ::versioning/scheme mbt-defaults/git-distance-scheme
 
+             ::maven/server mbt-defaults/clojars
+
              ::project/licenses [{::project.license/name "Eclipse Public License - v 2.0"
                                   ::project.license/url "https://www.eclipse.org/legal/epl-v20.html"
                                   ::project.license/distribution :repo

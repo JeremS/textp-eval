@@ -22,7 +22,7 @@
 (ex/derive ::eval-error ::ex/incorrect)
 
 (defn- eval-form
-  "Eval one for, wraps exceptions."
+  "Eval one form, wraps exceptions."
   [form]
   (ex/try+
     (env/*eval* form)
