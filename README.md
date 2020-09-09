@@ -1,6 +1,6 @@
 
 
-# Textp-doc
+# Textp-eval
 This library provides some helper one may use to eval textp documents. Can only eval from clojure for now.
 
 ## Installation
