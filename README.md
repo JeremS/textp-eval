@@ -14,7 +14,7 @@ Lein coords:
 ```
 Git coords:
 ```clojure
-{fr.jeremyschoffen/textp-eval-alpha {:git/url "https://github.com/JeremS/textp-eval", :sha "7cd08174f29106ff2e9b608c03438386b5f03ade"}}
+{fr.jeremyschoffen/textp-eval-alpha {:git/url "https://github.com/JeremS/textp-eval", :sha "2f11b142790f6f2cf65a9a18040b5adc1bb302b0"}}
 ```
 
 ## License
